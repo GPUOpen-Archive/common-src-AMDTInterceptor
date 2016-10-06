@@ -484,7 +484,7 @@ private:
         CloseHandle(targetProcHandle);
         return retVal;
     }
-
+private:
     // ---------------------------------------------------------------------------
     /// Injects the DLL path into the target process.
     /// \param [in] targetProcHandle Handle to target application process

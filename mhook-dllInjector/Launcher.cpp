@@ -24,8 +24,7 @@
 #else
     #define DEBUG_OUTPUT(x)
 #endif
-
-extern BOOL InjectDLLIntoProcess(const char* lpDllName, DWORD processID);
+extern bool InjectDLLIntoProcess(LPCSTR lpDllName, DWORD processID);
 
 /// Main application entry point
 /// The first command line argument is the name of the dll to be injected
@@ -47,4 +46,3 @@ int _tmain(int argc, _TCHAR* argv[])
 
     return 0;
 }
-

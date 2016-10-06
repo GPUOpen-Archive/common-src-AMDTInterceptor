@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="UserMacros">
     <!--ConfigurationFolderName-->
@@ -9,11 +9,11 @@
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(CommonProjectsDir)\AMDTInterceptor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(CommonDir)\Src\AMDTInterceptor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>$(CommonDir)\Lib\Ext\Detours3\lib\VC14\$(GDTCRT)\$(GDTPlatformExt)\$(ConfigurationFolderName);$(CommonProjectsDir)\AMDTInterceptor\Detours\lib\VC14\$(GDTCRT)\$(GDTPlatformExt)\$(ConfigurationFolderName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>detours.lib;Interceptor.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(CommonDir)\Src\AMDTInterceptor\Detours\lib\VC14\$(GDTCRT)\$(GDTPlatformExt)\$(ConfigurationFolderName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Interceptor.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
 </Project>
