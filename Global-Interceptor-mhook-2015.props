@@ -11,4 +11,9 @@
       <AdditionalIncludeDirectories>$(CommonDir)\Src\AMDTInterceptor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(CommonDir)\Src\AMDTInterceptor\mhook-dllInjector\Interceptor-2015.vcxproj">
+      <Project>{0E055CAF-C68B-42CB-A302-F775CA5A917F}</Project>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
