@@ -7,13 +7,12 @@
   <PropertyGroup>
     <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
   </PropertyGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(CommonDir)\Lib\Ext\Detours3\Global-Detours-2015.props" />
+  </ImportGroup>
   <ItemDefinitionGroup>
     <ClCompile>
       <AdditionalIncludeDirectories>$(CommonDir)\Src\AMDTInterceptor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
-    <Link>
-      <AdditionalLibraryDirectories>$(CommonDir)\Src\AMDTInterceptor\Detours\lib\VC14\$(GDTCRT)\$(GDTPlatformExt)\$(ConfigurationFolderName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>Interceptor.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
   </ItemDefinitionGroup>
 </Project>
